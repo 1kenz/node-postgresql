@@ -15,11 +15,11 @@ sequelize
 // recruiter table in the clarusway db
 
 // modelname, attribute, options
-const userModel = sequelize.define(
+const UserModel = sequelize.define(
   "recruiter",
   {
     //attributes
-    // id, fistName, lastName, createdAt, updatedAt
+    //id, firstName, lastName, createdAt, updatedAt
     firstName: {
       type: DataTypes.STRING,
     },
@@ -32,4 +32,4 @@ const userModel = sequelize.define(
   }
 );
 
-module.exports = userModel;
+module.exports = UserModel;

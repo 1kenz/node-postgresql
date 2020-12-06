@@ -18,13 +18,12 @@
 
   <body>
     <%- include('navbar.ejs') %>
-
     <!-- table -->
     <div class="container">
       <div class="row col-md-12 custyle">
         <table class="table table-striped custab">
           <thead>
-            <a href="#" class="btn btn-primary btn-xs pull-right"
+            <a href="/user/add" class="btn btn-primary btn-xs pull-right"
               ><b>+</b> Add new user</a
             >
             <tr>
@@ -37,7 +36,6 @@
             </tr>
           </thead>
           <tbody>
-            <!-- //TODO: userList from db to be mapped -->
             <% userList.map(user => { %>
             <tr>
               <td><%= user.id %></td>
